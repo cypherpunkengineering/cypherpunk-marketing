@@ -7,12 +7,17 @@
   table, td {mso-table-lspace: 0pt;mso-table-rspace: 0pt;}
   img {-ms-interpolation-mode: bicubic;}
   </style>
-  <![endif]-->
+  <![endif]--><!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
+    <style>* { font-family: sans-serif !important; }</style>
+  <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!-->
 	<style type="text/css">@font-face {
-      font-family: 'GothamRounded';
-      src: url('https://cypherpunk.com/assets/fonts/gotham/GothamRnd-Book.otf') format('opentype');
-    }
+        font-family: 'GothamRounded';
+        src: url('https://cypherpunk.com/assets/fonts/gotham/GothamRnd-Book.otf') format('opentype');
+        }
 	</style>
+	<style type="text/css">* {font-family: GothamRounded, sans-serif;}
+	</style>
+	<!--<![endif]-->
 	<style type="text/css">body {
     color: #000000;
   }
@@ -74,15 +79,6 @@
         padding-right: 0 !important;
     }
   }
-	</style>
-	<!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. --><!--[if mso]>
-    <style>
-        * {
-            font-family: sans-serif !important;
-        }
-    </style>
-  <![endif]--><!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ --><!--[if !mso]><!--><!--<![endif]-->
-	<style type="text/css">* {font-family: GothamRounded, sans-serif;}
 	</style>
 	<style type="text/css">body, p, div { font-family: GothamRounded,helvetica,arial,sans-serif; }
 	</style>
@@ -174,7 +170,7 @@
 <table width="400" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
   <tr>
     <td width="400" valign="top">
-<![endif]--><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%22400%22%2C%22height%22%3A517%2C%22alt_text%22%3A%22%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/dd9cef25430e24c3600345a4d9940e4a161c8d70bcd71d38f0fe135ef2936d3339543dd56a995af7bbaa2c52c02cf8c65a7586845a3ba19fe03b8a29212c0c1f.png%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D"><img alt="" border="0" class="max-width" height="517" src="https://marketing-image-production.s3.amazonaws.com/uploads/dd9cef25430e24c3600345a4d9940e4a161c8d70bcd71d38f0fe135ef2936d3339543dd56a995af7bbaa2c52c02cf8c65a7586845a3ba19fe03b8a29212c0c1f.png" style="color: rgb(0, 0, 0); text-decoration: none; font-family: GothamRounded,Helvetica, arial, sans-serif; font-size: 16px; max-width: 400px !important; width: 400px; height: 517px;" width="400" /></span> <!--[if mso]>
+<![endif]--><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%22400%22%2C%22height%22%3A517%2C%22alt_text%22%3A%22%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/dd9cef25430e24c3600345a4d9940e4a161c8d70bcd71d38f0fe135ef2936d3339543dd56a995af7bbaa2c52c02cf8c65a7586845a3ba19fe03b8a29212c0c1f.png%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D"><img alt="" border="0" class="max-width" height="517" src="https://marketing-image-production.s3.amazonaws.com/uploads/dd9cef25430e24c3600345a4d9940e4a161c8d70bcd71d38f0fe135ef2936d3339543dd56a995af7bbaa2c52c02cf8c65a7586845a3ba19fe03b8a29212c0c1f.png" style="color: rgb(0, 0, 0); text-decoration: none; font-family: GothamRounded,Helvetica, arial, sans-serif; font-size: 16px; width: 400px; height: 517px;" width="400" /></span> <!--[if mso]>
 </td></tr></table>
 </center>
 <![endif]--></td>
@@ -198,32 +194,28 @@
 													</tbody>
 												</table>
 
-												<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" data-attributes="%7B%22child%22%3Afalse%2C%22link%22%3A%22%22%2C%22width%22%3A%22400%22%2C%22height%22%3A%2286%22%2C%22imagebackground%22%3A%22%23FFFFFF%22%2C%22url%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png%22%2C%22alt_text%22%3A%22%22%2C%22dropped%22%3Atrue%2C%22imagemargin%22%3A%2260%2C10%2C0%2C10%22%2C%22alignment%22%3A%22center%22%2C%22responsive%22%3Atrue%7D" data-type="image" role="module" style="table-layout: fixed;" width="100%">
+												<table border="0" cellpadding="0" cellspacing="0" class="module" data-attributes="%7B%22dropped%22%3Atrue%2C%22padding%22%3A%2260%2C0%2C0%2C0%22%2C%22containerbackground%22%3A%22%23ffffff%22%7D" data-type="wysiwyg" role="module" style="table-layout: fixed;" width="100%">
 													<tbody>
 														<tr>
-															<td align="center" role="module-content" style="font-size:6px;line-height:10px;background-color:#FFFFFF;padding: 60px 10px 0px 10px;" valign="top"><!--[if mso]>
-<center>
-<table width="400" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
-  <tr>
-    <td width="400" valign="top">
-<![endif]--><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%22400%22%2C%22height%22%3A86%2C%22alt_text%22%3A%22%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D"><img alt="" border="0" class="max-width" height="86" src="https://marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png" style="color: rgb(0, 0, 0); text-decoration: none; font-family: GothamRounded,Helvetica, arial, sans-serif; font-size: 16px; max-width: 400px !important; width: 400px; height: 86px;" width="400" /></span> <!--[if mso]>
-</td></tr></table>
-</center>
-<![endif]--></td>
+															<td bgcolor="#ffffff" role="module-content" style="padding: 60px 0px 0px 0px;">
+															<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;text-align: center;"><span style="color:#726e6e;"><span style="font-family:GothamRounded,sans-serif;"><span id="docs-internal-guid-fa8f8ad4-468b-4ebe-1acb-6187734bd968" style="font-weight:normal;"><span style="font-size: 11pt; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; white-space: pre-wrap;">Thank you for your interest in Cypherpunk Privacy.</span></span></span></span></p>
+															</td>
 														</tr>
 													</tbody>
 												</table>
 
-												<table border="0" cellpadding="0" cellspacing="0" class="module" data-attributes="%7B%22dropped%22%3Atrue%2C%22padding%22%3A%2240%2C0%2C40%2C0%22%2C%22containerbackground%22%3A%22%23ffffff%22%7D" data-type="wysiwyg" role="module" style="table-layout: fixed;" width="100%">
+												<table align="center" border="0" cellpadding="0" cellspacing="0" class="wrapper" data-attributes="%7B%22child%22%3Afalse%2C%22link%22%3A%22%22%2C%22width%22%3A%22400%22%2C%22height%22%3A%2286%22%2C%22imagebackground%22%3A%22%23FFFFFF%22%2C%22url%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png%22%2C%22alt_text%22%3A%22%22%2C%22dropped%22%3Atrue%2C%22imagemargin%22%3A%2210%2C10%2C40%2C10%22%2C%22alignment%22%3A%22center%22%2C%22responsive%22%3Atrue%7D" data-type="image" role="module" style="table-layout: fixed;" width="100%">
 													<tbody>
 														<tr>
-															<td bgcolor="#ffffff" role="module-content" style="padding: 40px 0px 40px 0px;">
-															<div>
-															<p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;text-align: center;"><span style="color:#726e6e;"><span style="font-family:GothamRounded,sans-serif;"><span id="docs-internal-guid-fa8f8ad4-468b-4ebe-1acb-6187734bd968" style="font-weight:normal;"><span style="font-size: 11pt; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; white-space: pre-wrap;">Thank you for your interest in Cypherpunk Privacy.</span></span></span></span></p>
-
-															<div style="list-style-type: disc; font-size: 11pt; font-family: GothamRounded,Arial; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; text-align: center;"><span style="color:#726e6e;"><span style="font-family:GothamRounded,sans-serif;"><span id="docs-internal-guid-fa8f8ad4-468b-4ebe-1acb-6187734bd968" style="font-weight:normal;"><span style="font-size: 11pt; background-color: transparent; font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; white-space: pre-wrap;">Cypherpunk Partners</span></span></span></span></div>
-															</div>
-															</td>
+															<td align="center" role="module-content" style="font-size:6px;line-height:10px;background-color:#FFFFFF;padding: 10px 10px 40px 10px;" valign="top"><!--[if mso]>
+<center>
+<table width="400" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+  <tr>
+    <td width="400" valign="top">
+<![endif]--><span class="sg-image" data-imagelibrary="%7B%22width%22%3A%22400%22%2C%22height%22%3A86%2C%22alt_text%22%3A%22%22%2C%22alignment%22%3A%22%22%2C%22border%22%3A0%2C%22src%22%3A%22https%3A//marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png%22%2C%22classes%22%3A%7B%22sg-image%22%3A1%7D%7D"><img alt="" border="0" class="max-width" height="86" src="https://marketing-image-production.s3.amazonaws.com/uploads/4ea45dc477afdf3c7cde9832a038a00862951f8716127144d6f2ecc5ed156729e0c020248ac41d923029f8ea93078436857f10b3c8b5f13036724af4d7ff7290.png" style="color: rgb(0, 0, 0); text-decoration: none; font-family: GothamRounded,Helvetica, arial, sans-serif; font-size: 16px; width: 400px; height: 86px;" width="400" /></span> <!--[if mso]>
+</td></tr></table>
+</center>
+<![endif]--></td>
 														</tr>
 													</tbody>
 												</table>
